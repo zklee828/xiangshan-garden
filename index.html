@@ -26,33 +26,42 @@
         }
         nav a {
             color: white;
-            padding: 14px 20px;
             text-decoration: none;
+            padding: 14px 20px;
+            display: block;
         }
         nav a:hover {
             background-color: #4CAF50;
         }
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        .hero {
+            text-align: center;
+            padding: 40px;
         }
-        img {
-            width: 100%;
+        .hero img {
+            max-width: 80%;
             height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            border-radius: 10px;
         }
-        h2 {
-            color: #4CAF50;
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
         }
         footer {
-            text-align: center;
-            padding: 10px;
             background-color: #333;
             color: white;
+            text-align: center;
+            padding: 15px;
             margin-top: 20px;
         }
     </style>
@@ -63,30 +72,34 @@
         <p>專業園藝服務，打造綠意生活</p>
     </header>
     <nav>
-        #about關於我們</a>
-        #services服務項目</a>
-        <a href="#contact">聯絡資訊</a>
-    <div class="container">
+        <!--#services服務項目</a>-->
+        <!--#contact聯絡我們</a>-->
+    </nav>
+    <section class="hero">
         <img src="garden.jpg" alt="香山園藝庭園景out">
-            <h2>關於我們</h2>
-            <p>香山園藝位於彰化縣員林市香山路85巷2號，致力於提供專業的園藝服務，讓您的庭園更美麗。</p>
-        </section>
-        <section id="services">
-            <h2>服務項目</h2>
-            <ul>
-                <li>各式樹種販售：真柏、黑松、羅漢松</li>
-                <li>樹木工程</li>
-                <li>庭園維護</li>
-                <li>景觀設計</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>聯絡資訊</h2>
-            <p>地址：彰化縣員林市香山路85巷2號</p>
-            <p>電話：04-831-9980</p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 香山園藝. All Rights Reserved.</p>
+    </section>
+    <section id="services" class="services">
+        <div class="service-card">
+            <h3>樹種販售</h3>
+            <p>真柏、黑松、羅漢松等多樣選擇</p>
+        </div>
+        <div class="service-card">
+            <h3>樹木工程</h3>
+            <p>專業修剪、移植與養護</p>
+        </div>
+        <div class="service-card">
+            <h3>庭園維護</h3>
+            <p>定期保養，保持庭園美觀</p>
+        </div>
+        <div class="service-card">
+            <h3>景觀設計</h3>
+            <p>量身打造專屬綠意空間</p>
+        </div>
+    </section>
+    <footer id="contact">
+        <p>聯絡電話：04-831-9980</p>
+        <p>地址：彰化縣員林市香山路85巷2號</p>
+        <p>&copy; 2025 香山園藝</p>
     </footer>
 </body>
+</html>
